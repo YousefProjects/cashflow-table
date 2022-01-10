@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+/* table styling */
+.styled-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.styled-table thead tr {
+  background-color: hsl(520, 30%, 53%);
+  color: #ffffff;
+  text-align: left;
+  border-bottom: 2px solid #009879;
+}
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+table {
+  width: 100%;
+}
+td, th{
+  width: 25%;
+}
+.tables {
+  margin-top: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+/* add new transaction form */
+:root {
+  --error-color: #e74c3c;
+}
+.container {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  max-width: 800px;
+  padding: 30px 40px;
+}
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.form-control label {
+  color: #777;
+  display: block;
+  margin-bottom: 5px;
+}
+.form-control input,
+.form-control select {
+  border: 2px solid#f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+.form-control input:focus,
+.form-control select:focus {
+  outline: 0;
+  border-color: #777;
+}
+small {
+  color: var(--error-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  height: 10px;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+}
+.form-control.error small {
+  visibility: visible;
+}
+.form button {
+  cursor: pointer;
+  background-color: #3498db;
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
